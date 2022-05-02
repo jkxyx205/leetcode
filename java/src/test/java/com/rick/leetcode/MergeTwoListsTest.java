@@ -14,8 +14,8 @@ public class MergeTwoListsTest {
 
     @Test
     public void mergeTwoLists() {
-        mergeTwoLists.mergeTwoLists(mergeTwoLists.getListNode(1, 3, 5, 8),
-                mergeTwoLists.getListNode(2, 4, 6)
+        mergeTwoLists.mergeTwoLists(ListNode.of(1, 3, 5, 8),
+                ListNode.of(2, 4, 6)
                 );
 //
 //        mergeTwoLists.mergeTwoLists(mergeTwoLists.getListNode(12),
