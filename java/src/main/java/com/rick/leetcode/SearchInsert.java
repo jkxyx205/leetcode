@@ -1,6 +1,7 @@
 package com.rick.leetcode;
 
 /**
+ * 35. 搜索插入位置
  * @author Rick
  * @createdAt 2022-04-29 16:19:00
  */
