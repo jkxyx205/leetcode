@@ -38,6 +38,17 @@ class ListNode {
         return root;
     }
 
+    static ListNode reverse(ListNode current) {
+        ListNode prev = null;
+        while (current != null) {
+            ListNode temp = current.next;
+            current.next = prev;
+            prev = current;
+            current = temp;
+        }
+        return prev;
+    }
+
     void print() {
         ListNode current = this;
 
