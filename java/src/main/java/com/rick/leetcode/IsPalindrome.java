@@ -31,8 +31,5 @@ public class IsPalindrome {
 
     public static void main(String[] args) {
         ListNode head = ListNode.of(1, 2, 2, 1);
-
-
-
     }
 }
