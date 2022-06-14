@@ -16,7 +16,7 @@ public class FindBestValueTest {
     @Test
     public void findBestValue() {
         Assert.assertEquals(3, findBestValue.findBestValue(new int[]{4, 9, 3}, 10));
-//        Assert.assertEquals(5, findBestValue.findBestValue(new int[]{2,3,5}, 10));
-//        Assert.assertEquals(11361, findBestValue.findBestValue(new int[]{60864,25176,27249,21296,20204}, 56803));
+        Assert.assertEquals(5, findBestValue.findBestValue(new int[]{2,3,5}, 10));
+        Assert.assertEquals(11361, findBestValue.findBestValue(new int[]{60864,25176,27249,21296,20204}, 56803));
     }
 }

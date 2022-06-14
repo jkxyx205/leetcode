@@ -10,9 +10,9 @@ public class FindBestValue {
 
     public int findBestValue(int[] arr, int target) {
         int sum = Arrays.stream(arr).sum();
-        Arrays.sort(arr);
+        int max = max(arr);
         if (sum <= target) {
-            return arr[arr.length - 1];
+            return max;
         }
 
         int diff = sum - target;
@@ -24,7 +24,7 @@ public class FindBestValue {
             addDiff = diff / arr.length + 1;
         }
 
-        int value = arr[arr.length - 1] - addDiff;
+        int value = max - addDiff;
         int prevDiff = diff;
         while (true) {
             int newSum = getNewSum(arr, value);
@@ -57,6 +57,14 @@ public class FindBestValue {
         }
 
         return sum;
+    }
+
+    private int max(int[] arr) {
+        int max = arr[0];
+        for (int i : arr) {
+            max = max < i ? i :max;
+        }
+        return max;
     }
 
 }
